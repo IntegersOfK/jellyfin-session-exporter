@@ -73,6 +73,11 @@ The following metrics are exposed at `/metrics`:
 | `jellyfin_active_sessions_total` | Gauge | Total number of currently active playback sessions | none |
 | `jellyfin_active_sessions_count_total` | Gauge | Cumulative count of all sessions seen since exporter start | none |
 
+### Grafana
+Import the [Grafana dashboard example](grafana/grafana_dashboard.json) json.
+![Dashboard](grafana/dashboard_sample.png)
+
+
 ## 🔍 Health Checking
 
 The container includes a built-in health check that verifies the `/metrics` endpoint is responding correctly. The health check runs every 30 seconds with a 3-second timeout.
